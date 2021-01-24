@@ -1,0 +1,16 @@
+
+version: 2
+
+sources:
+  - name: dbt_events_source
+    database: DEV_LND_FLOWCAL
+    schema: FCOWNER
+    tables:
+      - name: MASTERDATA
+      - name: FC_EVENT_DLY
+  - name: Target
+    database: DEV_EDW
+    schema: DBT_SRINI
+    tables:
+      - name: EVENTS
+      - name: EVENTS_SOURCE

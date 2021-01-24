@@ -1,0 +1,11 @@
+
+version: 2
+
+sources:
+  - name: dbt_data_analytics
+    database: DEV_LND_FLOWCAL
+    schema: FCOWNER
+    tables:
+      - name: MASTERDATA
+      - name: EVENTS
+
