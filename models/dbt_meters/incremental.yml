@@ -1,0 +1,12 @@
+
+version: 2
+
+sources:
+  - name: Target
+    database: DEV_EDW
+    schema: DBT_SRINI
+    tables:
+      - name: METERS_DIM
+      - name: METERS_SOURCE
+      
+      

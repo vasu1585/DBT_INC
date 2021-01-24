@@ -1,0 +1,15 @@
+
+version: 2
+
+sources:
+  - name: dbt_enable_watermark
+    database: DEV_EDW
+    schema: DBT_SRINI
+    tables:
+      - name: VOLUMES_FACT
+      - name: WATERMARK
+  - name: dbt_volumes_src
+    database: DEV_LND_FLOWCAL
+    schema: FCOWNER
+    tables:
+      - name: FC_METER
