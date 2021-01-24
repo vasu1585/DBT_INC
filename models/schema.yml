@@ -2,19 +2,10 @@
 version: 2
 
 sources:
-  - name: dbt_enable_midstream_data_analytics
+  - name: dbt_data_analytics
     database: DEV_LND_FLOWCAL
     schema: FCOWNER
     tables:
-      - name: FC_METER
-      - name: FC_METER_2
-      - name: FC_METER_CHARACTERISTIC
-      - name: FC_METER_CLASS
-      - name: FC_CUSTOMER
-      - name: FC_METER_DIRECTION
-      - name: FC_STATE
-  - name: dbt_enable_midstream_data_analytics
-    database: DEV_EDW
-    schema: SYSOPS
-    tables:
-      - name: FC_COUNTY_BASIN_VW
+      - name: MASTERDATA
+      - name: EVENTS
+

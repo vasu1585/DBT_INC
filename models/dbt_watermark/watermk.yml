@@ -2,14 +2,14 @@
 version: 2
 
 sources:
-  - name: dbt_enable_watermark
+  - name: dbt_watermark
     database: DEV_EDW
     schema: DBT_SRINI
     tables:
-      - name: VOLUMES_FACT
+      - name: EVENTS
       - name: WATERMARK
-  - name: dbt_volumes_src
+  - name: dbt_EVENTS_src
     database: DEV_LND_FLOWCAL
     schema: FCOWNER
     tables:
-      - name: FC_METER
+      - name: MASTERDATA
